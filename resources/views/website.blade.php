@@ -1,81 +1,22 @@
-<!DOCTYPE html>
-<html>
-    <head>
+@extends('layouts.appweb')
 
-        <!-- /.website title -->
-        <title>Backyard Landing Page</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-        <!-- CSS Files -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="fonts/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
-        <link href="css/animate.css" rel="stylesheet" media="screen">
-        <link href="css/owl.theme.css" rel="stylesheet">
-        <link href="css/owl.carousel.css" rel="stylesheet">
-
-        <!-- Colors -->
-        <link href="css/css-index.css" rel="stylesheet" media="screen">
-        <!-- <link href="css/css-index-green.css" rel="stylesheet" media="screen"> -->
-        <!-- <link href="css/css-index-purple.css" rel="stylesheet" media="screen"> -->
-        <!-- <link href="css/css-index-red.css" rel="stylesheet" media="screen"> -->
-        <!-- <link href="css/css-index-orange.css" rel="stylesheet" media="screen"> -->
-        <!-- <link href="css/css-index-yellow.css" rel="stylesheet" media="screen"> -->
-
-        <!-- Google Fonts -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" />
-    </head>
-
-    <body data-spy="scroll" data-target="#navbar-scroll">
-
-        <!-- /.preloader -->
-        <div id="preloader"></div>
-        <div id="top"></div>
-
-        <!-- NAVIGATION -->
-        <div id="menu">
-            <nav class="navbar-wrapper navbar-default" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-backyard">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand site-name" href="#top"><img src="images/logo2.png" alt="logo"></a>
-                    </div>
-
-                    <div id="navbar-scroll" class="collapse navbar-collapse navbar-backyard navbar-right">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#intro">About</a></li>
-                            <li><a href="#feature">Features</a></li>
-                            <li><a href="#download">Download</a></li>
-                            <li><a href="#package">Pricing</a></li>
-                            <li><a href="#testi">Reviews</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
+@section('content')
         <!-- /.subscribe section -->
         <div id="download">
-            <div class="action fullscreen parallax" style="background-image:url('images/macbook-336704.jpg');" data-img-width="1920" data-img-height="1281" data-diff="100">
+            <div class="action fullscreen parallax" style="background-image:url('template/backyard/images/magang4.jpg');" data-img-width="1920" data-img-height="1281" data-diff="100">
                 <div class="overlay">
                     <div class="container">
                         <div class="col-md-8 col-md-offset-2 col-sm-12 text-center">
-                            <h2>Would like to know more?</h2>
-                            <p class="download-text">We'll research the market, identify the right target audience, analyze competitors and avoid users churn to increase retention. Download now for free and join with thousands happy clients.</p>
+                            <h2>Cari kerja susah, magang saja!!!</h2>
+                            <p class="download-text">Ketik pada kotak di bawah, lokasi, jurusan pendidikan terakhir dan posisi magang yang dicari.</p>
 
                             <!-- /.subscribe form -->
                             <div class="subscribe-form wow fadeInUp">
                                 <form class="news-letter mailchimp" action="http://moxdesign.us10.list-manage.com/subscribe/post" role="form" method="POST">
                                     <input type="hidden" name="u" value="503bdae81fde8612ff4944435">
                                     <input type="hidden" name="id" value="bfdba52708">
-                                    <input class="form-control" type="email" name="MERGE0" placeholder="Your email..." required="">
-                                    <button type="submit" class="subscribe-btn btn">SUBSCRIBE</button>
+                                    <input class="form-control" type="email" name="MERGE0" placeholder="Lokasi, Pendidikan, Posisi ..." required="">
+                                    <button type="submit" class="subscribe-btn btn">CARI MAGANG</button>
                                 </form>
                             </div>	
                         </div>	
@@ -91,106 +32,21 @@
 
                     <!-- /.intro image -->
                     <div class="col-md-6 intro-pic wow slideInLeft">
-                        <img src="images/ipad.jpg" alt="ipad" class="img-responsive">
+                        <img src="{{ asset('template/backyard/images/magang2.jpg') }}" alt="ipad" class="img-responsive">
                     </div>	
 
                     <!-- /.intro content -->
                     <div class="col-md-6 wow slideInRight">
-                        <h2>Optimize performance through advanced targeting solutions</h2>
-                        <p>Good marketing makes the company look smart. <a href="#">Great marketing</a> makes the customer feel smart, - Joe Chernov. Never doubt a small group of thoughtful, committed people can change the world. Indeed, it is the only thing that ever has, - Margaret Mead. The best way to predict the future is to create it, - Peter Drucker.
+                        <h2>Cari Magang dimanapun kau berada</h2>
+                        <p>“Do not let what you cannot do interfere with what you can do.” – John Wooden.
+                        </p>
+                        <p>If you look around, inspiration is constantly entering your life, you just have to know where to look. The next time you’re second guessing yourself or feeling defeated, focus on your passion. This will remind you to focus on your dreams and to keep working toward your goals. As an intern, you have the opportunity to become the professional you’ve always wanted to be. You just have to hold on to what inspires you to follow your dreams.
                         </p>
 
                         <div class="btn-section"><a href="#feature" class="btn-default">Learn More</a></div>
 
                     </div>
                 </div>			  
-            </div>
-        </div>
-
-        <!-- /.feature section -->
-        <div id="feature">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1 col-sm-12 text-center feature-title">
-
-                        <!-- /.feature title -->
-                        <h2>Recreate your ideas and gain more success</h2>
-                        <p>Increase your user loyalty by maintaining mutual communication and nurturing your online community.</p>
-                    </div>
-                </div>
-                <div class="row row-feat">
-                    <div class="col-md-4 text-center">
-
-                        <!-- /.feature image -->
-                        <div class="feature-img">
-                            <img src="images/iphone.jpg" alt="iphone" class="img-responsive wow fadeInLeft">
-                        </div>
-                    </div>
-
-                    <div class="col-md-8">
-
-                        <!-- /.feature 1 -->
-                        <div class="col-sm-6 feat-list">
-                            <i class="pe-7s-notebook pe-5x pe-va wow fadeInUp"></i>
-                            <div class="inner">
-                                <h4>Marketing Strategy</h4>
-                                <p>Good marketing makes the company look smart. Great marketing makes the customer feel smart.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- /.feature 2 -->
-                        <div class="col-sm-6 feat-list">
-                            <i class="pe-7s-cash pe-5x pe-va wow fadeInUp" data-wow-delay="0.2s"></i>
-                            <div class="inner">
-                                <h4>App Monetization</h4>
-                                <p>Content builds relationships. Relationships are built on trust. Trust drives revenue. - Andrew Davis</p>
-                            </div>
-                        </div>
-
-                        <!-- /.feature 3 -->
-                        <div class="col-sm-6 feat-list">
-                            <i class="pe-7s-cart pe-5x pe-va wow fadeInUp" data-wow-delay="0.4s"></i>
-                            <div class="inner">
-                                <h4>Store Optimization</h4>
-                                <p>Never doubt a small group of thoughtful, committed people can change the world. Indeed, it is the only thing that ever has.</p>
-                            </div>
-                        </div>
-
-                        <!-- /.feature 4 -->
-                        <div class="col-sm-6 feat-list">
-                            <i class="pe-7s-users pe-5x pe-va wow fadeInUp" data-wow-delay="0.6s"></i>
-                            <div class="inner">
-                                <h4>User Management</h4>
-                                <p>Instead of using technology to automate processes, think about using technology to enhance human interaction.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- /.feature 2 section -->
-        <div id="feature-2">
-            <div class="container">
-                <div class="row">
-
-                    <!-- /.feature content -->
-                    <div class="col-md-6 wow fadeInLeft">
-                        <h2>Learn how to make your app marketing efficient</h2>
-                        <p>Good marketing makes the company look smart. <span class="highlight">Great marketing</span> makes the customer feel smart, - Joe Chernov. Never doubt a small group of thoughtful, committed people can change the world. Indeed, it is the only thing that ever has, - Margaret Mead. The best way to predict the future is to create it, - Peter Drucker.
-                        </p>
-
-                        <div class="btn-section"><a href="#download" class="btn-default">Download Now</a></div>
-
-                    </div>
-
-                    <!-- /.feature image -->
-                    <div class="col-md-6 feature-2-pic wow fadeInRight">
-                        <img src="images/macbook.jpg" alt="macbook" class="img-responsive">
-                    </div>				  
-                </div>			  
-
             </div>
         </div>
 
@@ -354,10 +210,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 text-center">
-                        <img alt="client" src="images/client1.png" class="wow fadeInUp">
-                        <img alt="client" src="images/client2.png" class="wow fadeInUp" data-wow-delay="0.2s">
-                        <img alt="client" src="images/client3.png" class="wow fadeInUp" data-wow-delay="0.4s">
-                        <img alt="client" src="images/client4.png" class="wow fadeInUp" data-wow-delay="0.6s">
+                        <img alt="client" src="{{ asset('template/backyard/images/client1.png') }}" class="wow fadeInUp">
+                        <img alt="client" src="{{ asset('template/backyard/images/client2.png') }}" class="wow fadeInUp" data-wow-delay="0.2s">
+                        <img alt="client" src="{{ asset('template/backyard/images/client3.png') }}" class="wow fadeInUp" data-wow-delay="0.4s">
+                        <img alt="client" src="{{ asset('template/backyard/images/client4.png') }}" class="wow fadeInUp" data-wow-delay="0.6s">
                     </div>
                 </div>
             </div>	
@@ -379,7 +235,7 @@
                                 <div class="client-pic text-center">
 
                                     <!-- /.client photo -->
-                                    <img src="images/testi1.jpg" alt="client">
+                                    <img src="{{ asset('template/backyard/images/testi1.jpg') }}" alt="client">
                                 </div>
                                 <div class="box">
 
@@ -398,7 +254,7 @@
                                 <div class="client-pic text-center">
 
                                     <!-- /.client photo -->
-                                    <img src="images/testi2.jpg" alt="client">
+                                    <img src="{{ asset('template/backyard/images/testi2.jpg') }}" alt="client">
                                 </div>
                                 <div class="box">
 
@@ -417,7 +273,7 @@
                                 <div class="client-pic text-center">
 
                                     <!-- /.client photo -->
-                                    <img src="images/testi3.jpg" alt="client">
+                                    <img src="{{ asset('template/backyard/images/testi3.jpg') }}" alt="client">
                                 </div>
                                 <div class="box">
 
@@ -448,14 +304,14 @@
                             <div class="col-sm-5 contact-left wow fadeInUp">
                                 <h2><span class="highlight">Get</span> in touch</h2>
                                 <ul class="ul-address">
-                                    <li><i class="pe-7s-map-marker"></i>1600 Amphitheatre Parkway, Mountain View</br>
-                                        California 55000
+                                    <li><i class="pe-7s-map-marker"></i>WTC5 3A floor, Jl. Jendral Sudirman Kav. 29-31</br>
+                                        Jakarta, 12920
                                     </li>
-                                    <li><i class="pe-7s-phone"></i>+1 (123) 456-7890</br>
-                                        +2 (123) 456-7890
+                                    <li><i class="pe-7s-phone"></i>+62 21 2555 5700</br>
+                                        +62 21 2555 5701
                                     </li>
-                                    <li><i class="pe-7s-mail"></i><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-                                    <li><i class="pe-7s-look"></i><a href="#">www.yoursite.com</a></li>
+                                    <li><i class="pe-7s-mail"></i><a href="mailto:info@yoursite.com">info@magang.com</a></li>
+                                    <li><i class="pe-7s-look"></i><a href="#">www.magang.com</a></li>
                                 </ul>	
 
                             </div>
@@ -482,42 +338,4 @@
                 </div>
             </div>
         </div>
-
-        <!-- /.footer -->
-        <footer id="footer">
-            <div class="container">
-                <div class="col-sm-4 col-sm-offset-4">
-                    <!-- /.social links -->
-                    <div class="social text-center">
-                        <ul>
-                            <li><a class="wow fadeInUp" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
-                            <li><a class="wow fadeInUp" href="https://www.facebook.com/" data-wow-delay="0.2s"><i class="fa fa-facebook"></i></a></li>
-                            <li><a class="wow fadeInUp" href="https://plus.google.com/" data-wow-delay="0.4s"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a class="wow fadeInUp" href="https://instagram.com/" data-wow-delay="0.6s"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                    </div>	
-                    <div class="text-center wow fadeInUp" style="font-size: 14px;">Copyright Backyard 2015 - Template by  <a href="http://bootstrapthemes.co/" target="_blank">BootstrapThemes</a></div>
-                    <a href="#" class="scrollToTop"><i class="pe-7s-up-arrow pe-va"></i></a>
-                </div>	
-            </div>	
-        </footer>
-
-        <!-- /.javascript files -->
-        <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/custom.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/ekko-lightbox-min.js"></script>
-        <script type="text/javascript">
-                                    $( document ).delegate( '*[data-toggle="lightbox"]', 'click', function ( event ) {
-                                        event.preventDefault();
-                                        $( this ).ekkoLightbox();
-                                    } );
-        </script>
-        <script>
-            new WOW().init();
-        </script>
-    </body>
-</html>
+@endsection

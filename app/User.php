@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'kategori', 'name', 'email', 'password',
     ];
 
     /**
@@ -26,4 +26,11 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    protected $table='users';
+
+    public function magang()
+    {
+        return $this->hasOne('App\Magang', 'mag_idp', 'id');
+    }
 }
