@@ -11,23 +11,27 @@
 |
 */
 
-Route::get('/', 'MagangController@index');
-Route::get('/crmag', 'MagangController@crmag');
+Route::get('/', 'HomeController@index');
+Route::get('/how', 'HomeController@how');
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/updatep/{id}', 'HomeController@updatep');
-Route::get('/savep', 'HomeController@savep');
-Route::get('/updatepsukses', 'MagangController@updatepsukses');
-Route::get('/pcrmag', 'MagangController@pcrmag');
-Route::get('/magang', 'MagangController@magang');
-Route::get('/posmag', 'MagangController@posmag');
-Route::get('/savemag', 'MagangController@savemag');
-Route::get('/updatemag/{id}', 'MagangController@updatemag');
-Route::get('/delmag/{id}', 'MagangController@delmag');
-Route::get('/magang/{id}', 'MagangController@showmag');
+Route::get('/cari', 'HomeController@cari');
+Route::get('/profilev/{id}', 'HomeController@profilev');
+Route::get('/summary', 'HomeController@summary');
+Route::get('/search', 'SearchController@index');
+Route::get('/bride', 'HomeController@bride');
 
-Route::get('/login', 'LoginController@index');
+/*
+ROUTE AFTER LOGIN
+*/
+Route::get('/home', 'HomeController@home');
+Route::get('/addven', 'InsideController@addven');
+Route::get('/updateven/{id}', 'InsideController@updateven');
+Route::post('/saveupdven', 'InsideController@saveupdven');
+Route::get('/delven/{id}', 'InsideController@delven');
 
+
+/*
+END ROUTE AFTER LOGIN
+*/
 Auth::routes();
-
 

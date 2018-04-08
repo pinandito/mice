@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layout.app')
 
 @section('content')
 <div class="container">
@@ -15,10 +15,9 @@
                             <label for="kategori" class="col-md-4 control-label">Kategori</label>
                             <div class="col-md-6">
                                 <select id="kategori" name="kategori" class="form-control">
-                                    <option value="pekerja">Pekerja</option>
-                                    <option value="perusahaan">Perusahaan</option>
+                                    <option value="pelanggan">Vendor</option>
+                                    <option value="perawat">User</option>
                                 </select>
-
                                 @if ($errors->has('kategori'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('kategori') }}</strong>

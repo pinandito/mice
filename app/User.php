@@ -8,14 +8,15 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
     use Notifiable;
-
+    public $table = "users";
+    protected $primaryKey = 'idus';
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'kategori', 'name', 'email', 'password',
+        'name', 'email', 'password'
     ];
 
     /**
@@ -26,11 +27,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-
-    protected $table='users';
-
-    public function magang()
+	
+	public function vendor()
     {
-        return $this->hasOne('App\Magang', 'mag_idp', 'id');
+        return $this->belongsTo('App\Vendor', 'user_id', 'idus');
     }
 }
