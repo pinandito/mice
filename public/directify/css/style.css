@@ -558,8 +558,8 @@ div.directify_fn_share_closer{
 	Background's color:				#fff
 	Text's color:					#253147
 */
-.directify_fn_header_wrap[data-bg-type="light"] .directify_fn_header_logo a.dark{display: block;}
-.directify_fn_header_wrap[data-bg-type="light"] .directify_fn_header_logo a.light{display: none;}
+.directify_fn_header_wrap[data-bg-type="light"] .directify_fn_header_logo a.dark{display: block; width:10px}
+.directify_fn_header_wrap[data-bg-type="light"] .directify_fn_header_logo a.light{display: none; width:10px}
 .directify_fn_header_wrap[data-bg-type="light"] .directify_fn_header_search a{color: #253147;}
 .directify_fn_header_wrap[data-bg-type="light"] .directify_fn_header_nav_list ul li{color: #253147;}
 .directify_fn_header_wrap[data-bg-type="light"]{border-bottom-color: #e5e5e5;background-color: #fff;}
@@ -2485,7 +2485,7 @@ span.browse_me{
 	margin-bottom: 6px;
 }
 .cat_single_wrap .cat_single{
-	width: 120px;
+	width: 187px;
 	height: 120px;
 	position: relative;
 	display: inline-block;
@@ -2841,10 +2841,10 @@ span.browse_me{
 }
 .directify_fn_all_listings_wrap.index30 .directify_fn_all_listings_bg .overlay_color{
 	background-color: #002a46;
-	background-image: -webkit-linear-gradient(right top, #0089e2, #000 ); /* For Safari 5.1 to 6.0 */
-    background-image: -moz-linear-gradient(bottom left, #000, #0089e2 ); /* For Firefox 3.6 to 15 */
-    background-image: -o-linear-gradient(bottom left, #000, #0089e2 ); /* For Opera 11.1 to 12.0 */
-    background-image: linear-gradient(to bottom left, #0089e2, #000 ); /* Standard syntax */
+	background-image: -webkit-linear-gradient(right top, #10e126, #000 ); /* For Safari 5.1 to 6.0 */
+    background-image: -moz-linear-gradient(bottom left, #000, #10e126 ); /* For Firefox 3.6 to 15 */
+    background-image: -o-linear-gradient(bottom left, #000, #10e126 ); /* For Opera 11.1 to 12.0 */
+    background-image: linear-gradient(to bottom left, #10e126, #000 ); /* Standard syntax */
 	opacity: 1;
 }
 .directify_fn_all_listings_wrap.index30 .directify_fn_all_listings_bg .overlay_image{

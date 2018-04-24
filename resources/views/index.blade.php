@@ -13,7 +13,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<title>Directify | Homepage</title>
+<title>eventbeta.com | Homepage</title>
 
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Work+Sans:300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -68,8 +68,8 @@
    	
    		<div class="directify_fn_mobile_menu">
    			<div class="mobile_logo">
-				<a class="dark" href="index.html"><img src="{{asset('directify/img/logo-dark.png') }}" alt="" /></a>
-				<a class="light" href="index.html"><img src="{{asset('directify/img/logo-light.png') }}" alt="" /></a>
+				<a class="dark" href="index.html"><img src="{{asset('img/logo3.jpeg') }}" alt="" /></a>
+				<a class="light" href="index.html"><img src="{{asset('img/logo3.jpeg') }}" alt="" /></a>
 			</div>
   			<div class="mobile_search">
   				<a href="#">
@@ -91,80 +91,10 @@
    		<div class="directify_fn_mobile_nav">
    			<ul class="nav">
 				<li>
-					<a href="#">Explore<i class="xcon-angle-down"></i></a>
-					<ul class="sub_menu">
-						<li><a href="listing.html">Restaurants</a></li>
-						<li><a href="listing.html">Hotels</a></li>
-						<li><a href="listing.html">Shopping</a></li>
-						<li><a href="listing.html">Galleries</a></li>
-						<li><a href="listing.html">Parks</a></li>
-						<li><a href="listing.html">Movies</a></li>
-						<li><a href="listing.html">Services</a></li>
-						<li><a href="listing.html">Theatres</a></li>
-						<li><a href="listing.html">Hospitals</a></li>
-						<li><a href="listing_single1.html">Single Page #1</a></li>
-						<li><a href="listing_single2.html">Single Page #2</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Pages<i class="xcon-angle-down"></i></a>
-					<ul class="sub_menu">
-						<li><a href="index.html">Homepage #1</a></li>
-						<li><a href="index21.html">Homepage #2</a></li>
-						<li><a href="index23.html">Homepage #3</a></li>
-						<li><a href="index25.html">Homepage #4</a></li>
-						<li><a href="index10.html">Homepage #5</a></li><li><a href="contact.html">Contact</a></li>
-						<li>
-							<a href="#">Submenu Level #1<i class="xcon-angle-down"></i></a>
-							<ul class="sub_menu">
-								<li><a href="#">Level #2</a></li>
-								<li><a href="#">Level #2</a></li>
-								<li>
-									<a href="#">Level #2<i class="xcon-angle-down"></i></a>
-									<ul class="sub_menu">
-										<li><a href="#">Level #3</a></li>
-										<li><a href="#">Level #3</a></li>
-										<li><a href="#">Level #3</a></li>
-										<li>
-											<a href="#">Level #3<i class="xcon-angle-down"></i></a>
-											<ul class="sub_menu">
-												<li><a href="#">Level #4</a></li>
-												<li><a href="#">Level #4</a></li>
-												<li><a href="#">Level #4</a></li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li><a href="#">Level #2</a></li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Dashboard<i class="xcon-angle-down"></i></a>
-					<ul class="sub_menu">
-						<li><a href="dashboard-home.html">Dashboard - Home</a></li>
-						<li>
-							<a href="#">Dashboard - Listings<i class="xcon-angle-down"></i></a>
-							<ul class="sub_menu">
-								<li><a href="dashboard-listings.html">Active</a></li>
-								<li><a href="dashboard-listings.html">Panding</a></li>
-								<li><a href="dashboard-listings.html">Expired</a></li>
-							</ul>
-						</li>
-						<li><a href="dashboard-reviews.html">Dashboard - Reviews</a></li>
-						<li><a href="dashboard-bookmarks.html">Dashboard - Bookmarks</a></li>
-						<li><a href="dashboard-adding.html">Dashboard - Adding</a></li>
-						<li><a href="dashboard-invoices.html">Dashboard - Invoices</a></li>
-						<li><a href="dashboard-profile.html">Dashboard - Profile</a></li>
-					</ul>
-				</li>
-				<li>
 					<a href="#">Blog<i class="xcon-angle-down"></i></a>
-					<ul class="sub_menu">
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="blog_single.html">Single Page</a></li>
-					</ul>
+				</li>
+				<li class="log-in">
+					<a href="#">Register</a>
 				</li>
 				<li class="log-in">
 					<a href="#">Log In</a>
@@ -211,14 +141,10 @@
 			<div class="directify_fn_header">
 				<div class="header">
 					<div class="directify_fn_header_logo">
-						<a class="dark" href="index.html"><img src="{{asset('directify/img/logo-dark.png') }}" alt="" /></a>
-						<a class="light" href="index.html"><img src="{{asset('directify/img/logo-light.png') }}" alt="" /></a>
+						<a class="dark" href="index.html"><img src="{{asset('img/logo3.jpeg') }}" alt="" /></a>
+						<a class="light" href="index.html"><img src="{{asset('img/logo3.jpeg') }}" alt="" /></a>
 					</div>
 					<div class="directify_fn_header_search">
-						<a href="#">
-							<img class="svg" src="{{asset('directify/img/svg/search.svg') }}" alt="" />
-							Search
-						</a>
 						<div class="directify_fn_header_search_see_wrap one">
 							<div class="header_search_see">
 								<div class="selects">
@@ -251,80 +177,10 @@
 					<div class="directify_fn_header_nav_list">
 						<ul class="nav__hor">
 							<li>
-								<a href="#">Explore<i class="xcon-angle-down"></i></a>
-								<ul class="sub_menu">
-									<li><a href="listing.html">Restaurants</a></li>
-									<li><a href="listing.html">Hotels</a></li>
-									<li><a href="listing.html">Shopping</a></li>
-									<li><a href="listing.html">Galleries</a></li>
-									<li><a href="listing.html">Parks</a></li>
-									<li><a href="listing.html">Movies</a></li>
-									<li><a href="listing.html">Services</a></li>
-									<li><a href="listing.html">Theatres</a></li>
-									<li><a href="listing.html">Hospitals</a></li>
-									<li><a href="listing_single1.html">Single Page #1</a></li>
-									<li><a href="listing_single2.html">Single Page #2</a></li>
-								</ul>
+								<a href="#">Blog</a>
 							</li>
-							<li>
-								<a href="#">Pages<i class="xcon-angle-down"></i></a>
-								<ul class="sub_menu">
-									<li><a href="index.html">Homepage #1</a></li>
-									<li><a href="index21.html">Homepage #2</a></li>
-									<li><a href="index23.html">Homepage #3</a></li>
-									<li><a href="index25.html">Homepage #4</a></li>
-									<li><a href="index10.html">Homepage #5</a></li><li><a href="contact.html">Contact</a></li>
-									<li>
-										<a href="#">Submenu Level #1<i class="xcon-angle-right"></i></a>
-										<ul class="sub_menu">
-											<li><a href="#">Level #2</a></li>
-											<li><a href="#">Level #2</a></li>
-											<li>
-												<a href="#">Level #2<i class="xcon-angle-right"></i></a>
-												<ul class="sub_menu">
-													<li><a href="#">Level #3</a></li>
-													<li><a href="#">Level #3</a></li>
-													<li><a href="#">Level #3</a></li>
-													<li>
-														<a href="#">Level #3<i class="xcon-angle-right"></i></a>
-														<ul class="sub_menu">
-															<li><a href="#">Level #4</a></li>
-															<li><a href="#">Level #4</a></li>
-															<li><a href="#">Level #4</a></li>
-														</ul>
-													</li>
-												</ul>
-											</li>
-											<li><a href="#">Level #2</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Dashboard<i class="xcon-angle-down"></i></a>
-								<ul class="sub_menu">
-									<li><a href="dashboard-home.html">Dashboard - Home</a></li>
-									<li>
-										<a href="#">Dashboard - Listings<i class="xcon-angle-right"></i></a>
-										<ul class="sub_menu">
-											<li><a href="dashboard-listings.html">Active</a></li>
-											<li><a href="dashboard-listings.html">Panding</a></li>
-											<li><a href="dashboard-listings.html">Expired</a></li>
-										</ul>
-									</li>
-									<li><a href="dashboard-reviews.html">Dashboard - Reviews</a></li>
-									<li><a href="dashboard-bookmarks.html">Dashboard - Bookmarks</a></li>
-									<li><a href="dashboard-adding.html">Dashboard - Adding</a></li>
-									<li><a href="dashboard-invoices.html">Dashboard - Invoices</a></li>
-									<li><a href="dashboard-profile.html">Dashboard - Profile</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Blog<i class="xcon-angle-down"></i></a>
-								<ul class="sub_menu">
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="blog_single.html">Single Page</a></li>
-								</ul>
+							<li class="log-in">
+								<a href="#">Register</a>
 							</li>
 							<li class="log-in">
 								<a href="#">Log In</a>
@@ -355,12 +211,15 @@
     						<div class="discovering_wrap">
     							<div class="discovering">
     								<div class="title_holder">
-    									<h3>Discover the Best Places</h3>
-										<span>Directify helps you find all top locations</span>
+    									<h3>Your Great Moments, Covered</h3>
+										<span>eventbeta.com helps you organize all your events in a single click</span>
     								</div>
     								<div class="searching">
     									<input class="directify_fn_search_input" type="search" placeholder="What Are You Looking For?" />
     									<a class="directify_fn_search_btn" href="#"><img class="svg" src="{{asset('directify/img/svg/search.svg') }}" alt="" /><span>Search</span></a>
+									</div>
+									<div class="title_holder">
+										<span>What type of event do you want to organize?</span>
     								</div>
     								<div class="cat_single_wrap" data-hover-text="#fff" data-hover-bg="" data-hover-border="rgba(255,255,255,1)" data-skew="6" data-text-color="#fff" data-bg-color="" data-bg-opacity="" data-border-width="1" data-border-color="rgba(255,255,255,0.64)">
 										<div class="cat_single">
@@ -369,8 +228,8 @@
 											</div>
 											<div class="cat_single_content">
 												<a href="listing.html">
-													<img class="svg" src="{{asset('directify/img/svg/restaurant.svg') }}" alt="" />
-													<span class="cat_title">Restaurants</span>
+													<img class="svg" src="{{asset('directify/img/svg/birthday.svg') }}" alt="" />
+													<span class="cat_title">Birtyday</span>
 												</a>
 											</div>
 										</div>
@@ -380,8 +239,8 @@
 											</div>
 											<div class="cat_single_content">
 												<a href="listing.html">
-													<img class="svg" src="{{asset('directify/img/svg/hotel.svg') }}" alt="" />
-													<span class="cat_title">Hotels</span>
+													<img class="svg" src="{{asset('directify/img/svg/wedding.svg') }}" alt="" />
+													<span class="cat_title">Wedding</span>
 												</a>
 											</div>
 										</div>
@@ -392,7 +251,7 @@
 											<div class="cat_single_content">
 												<a href="listing.html">
 													<img class="svg" src="{{asset('directify/img/svg/shopping.svg') }}" alt="" />
-													<span class="cat_title">Shopping</span>
+													<span class="cat_title">Religious</span>
 												</a>
 											</div>
 										</div>
@@ -403,7 +262,7 @@
 											<div class="cat_single_content">
 												<a href="listing.html">
 													<img class="svg" src="{{asset('directify/img/svg/gallery.svg') }}" alt="" />
-													<span class="cat_title">Gallery</span>
+													<span class="cat_title">Corporate Events</span>
 												</a>
 											</div>
 										</div>
@@ -414,7 +273,7 @@
 											<div class="cat_single_content">
 												<a href="listing.html">
 													<img class="svg" src="{{asset('directify/img/svg/park.svg') }}" alt="" />
-													<span class="cat_title">Park</span>
+													<span class="cat_title">Educational Trips</span>
 												</a>
 											</div>
 										</div>
@@ -424,41 +283,8 @@
 											</div>
 											<div class="cat_single_content">
 												<a href="listing.html">
-													<img class="svg" src="{{asset('directify/img/svg/movie.svg') }}" alt="" />
-													<span class="cat_title">Movie</span>
-												</a>
-											</div>
-										</div>
-										<div class="cat_single">
-											<div class="cat_single_bg">
-												<div class="overlay_color"></div>
-											</div>
-											<div class="cat_single_content">
-												<a href="listing.html">
-													<img class="svg" src="{{asset('directify/img/svg/service.svg') }}" alt="" />
-													<span class="cat_title">Services</span>
-												</a>
-											</div>
-										</div>
-										<div class="cat_single">
-											<div class="cat_single_bg">
-												<div class="overlay_color"></div>
-											</div>
-											<div class="cat_single_content">
-												<a href="listing.html">
-													<img class="svg" src="{{asset('directify/img/svg/theatre.svg') }}" alt="" />
-													<span class="cat_title">Theatres</span>
-												</a>
-											</div>
-										</div>
-										<div class="cat_single">
-											<div class="cat_single_bg">
-												<div class="overlay_color"></div>
-											</div>
-											<div class="cat_single_content">
-												<a href="listing.html">
-													<img class="svg" src="{{asset('directify/img/svg/hospital.svg') }}" alt="" />
-													<span class="cat_title">Hospitals</span>
+													<img class="svg" src="{{asset('directify/img/svg/park.svg') }}" alt="" />
+													<span class="cat_title">Campaigns</span>
 												</a>
 											</div>
 										</div>
@@ -621,227 +447,8 @@
     				</div>
     			</div>
     		</div>
-    	</div>
-    	
-    	<!-- FAMOUS CITIES HOVERTAB -->
-    	<div class="directify_fn_tab_famous_cities_wrap">
-    		<div class="directify_fn_tab_famous_cities">
-    			<div class="tab_famous_cities">
-    				<div class="container">
-						<div class="directify_fn_tabs" data-skin="light" data-x-pos="left">
-							<div class="title_holder">
-								<h3>Most Popular Cities to Travel</h3>
-								<span class="title">These are Top Places that recommended by Directify</span>
-								<span class="line"></span>
-							</div>
-							<ul class="fam_city tabHeader">
-								<li>
-									<a href="listing.html">
-										<div class="fam_city_wrap">
-											<div class="number">
-												<span class="text">01</span>
-												<span class="after"></span>
-											</div>
-											<div class="fam_city_content">
-												<div class="title_holder">
-													<h3>New York</h3>
-													<span>227 Listings</span>
-												</div>
-												<div class="arrow">
-													<i class="xcon-angle-right"></i>
-												</div>
-											</div>
-											<div class="hidden_img">
-												<img src="{{asset('directify/img/popular_cities/city1-s.jpg') }}" alt="" />
-											</div>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="listing.html">
-										<div class="fam_city_wrap">
-											<div class="number">
-												<span class="text">02</span>
-												<span class="after"></span>
-											</div>
-											<div class="fam_city_content">
-												<div class="title_holder">
-													<h3>Paris</h3>
-													<span>154 Listings</span>
-												</div>
-												<div class="arrow">
-													<i class="xcon-angle-right"></i>
-												</div>
-											</div>
-											<div class="hidden_img">
-												<img src="{{asset('directify/img/popular_cities/city2-s.jpg') }}" alt="" />
-											</div>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="listing.html">
-										<div class="fam_city_wrap">
-											<div class="number">
-												<span class="text">03</span>
-												<span class="after"></span>
-											</div>
-											<div class="fam_city_content">
-												<div class="title_holder">
-													<h3>Rome</h3>
-													<span>854 Listings</span>
-												</div>
-												<div class="arrow">
-													<i class="xcon-angle-right"></i>
-												</div>
-											</div>
-											<div class="hidden_img">
-												<img src="{{asset('directify/img/popular_cities/city3-s.jpg') }}" alt="" />
-											</div>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="listing.html">
-										<div class="fam_city_wrap">
-											<div class="number">
-												<span class="text">04</span>
-												<span class="after"></span>
-											</div>
-											<div class="fam_city_content">
-												<div class="title_holder">
-													<h3>London</h3>
-													<span>239 Listings</span>
-												</div>
-												<div class="arrow">
-													<i class="xcon-angle-right"></i>
-												</div>
-											</div>
-											<div class="hidden_img">
-												<img src="{{asset('directify/img/popular_cities/city4-s.jpg') }}" alt="" />
-											</div>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="listing.html">
-										<div class="fam_city_wrap">
-											<div class="number">
-												<span class="text">05</span>
-												<span class="after"></span>
-											</div>
-											<div class="fam_city_content">
-												<div class="title_holder">
-													<h3>Moscow</h3>
-													<span>634 Listings</span>
-												</div>
-												<div class="arrow">
-													<i class="xcon-angle-right"></i>
-												</div>
-											</div>
-											<div class="hidden_img">
-												<img src="{{asset('directify/img/popular_cities/city5-s.jpg') }}" alt="" />
-											</div>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="listing.html">
-										<div class="fam_city_wrap">
-											<div class="number">
-												<span class="text">06</span>
-												<span class="after"></span>
-											</div>
-											<div class="fam_city_content">
-												<div class="title_holder">
-													<h3>Tokyo</h3>
-													<span>123 Listings</span>
-												</div>
-												<div class="arrow">
-													<i class="xcon-angle-right"></i>
-												</div>
-											</div>
-											<div class="hidden_img">
-												<img src="{{asset('directify/img/popular_cities/city6-s.jpg') }}" alt="" />
-											</div>
-										</div>
-									</a>
-								</li>
-							</ul>
-							<div class="tabContent">
-								<nav>
-									<div class="active"><a href="listing.html"></a><nav class="overlay"></nav></div>
-									<div class=""><a href="listing.html"></a><nav class="overlay"></nav></div>
-									<div class=""><a href="listing.html"></a><nav class="overlay"></nav></div>
-									<div class=""><a href="listing.html"></a><nav class="overlay"></nav></div>
-									<div class=""><a href="listing.html"></a><nav class="overlay"></nav></div>
-									<div class=""><a href="listing.html"></a><nav class="overlay"></nav></div>
-								</nav>
-							</div>
-						</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    	<!-- /FAMOUS CITIES HOVERTAB -->
-    	
-    	<!-- HOW IT WORK -->
-    	<div class="directify_fn_workstep_wrap">
-    		<div class="directify_fn_workstep">
-    			<div class="workstep_wrap">
-    				<div class="container">
-    					<div class="workstep">
-    						<div class="title_holder">
-								<h3>How It Works</h3>
-								<span class="title">Let the Directify direct you toward to top places</span>
-								<span class="line"></span>
-							</div>
-   							<div class="steps">
-   								<div class="step_single_wrap">
-   									<div class="step_single">
-   										<div class="number">
-   											<span class="text">01</span>
-   											<span class="after"></span>
-   										</div>
-   										<div class="title_holder">
-   											<h3>Choose What To Do</h3>
-   											<span>Looking for a cozy hotel to stay, a restaurant to eat, a museum to visit or a mall to do some shopping?</span>
-   										</div>
-   									</div>
-   								</div>
-   								<div class="step_single_wrap">
-   									<div class="step_single">
-   										<div class="number">
-   											<span class="text">02</span>
-   											<span class="after"></span>
-   										</div>
-   										<div class="title_holder">
-   											<h3>Find the Best Locations </h3>
-   											<span>Search and filter hundreds of listings, read reviews, explore photos and find the perfect spot.</span>
-   										</div>
-   									</div>
-   								</div>
-   								<div class="step_single_wrap">
-   									<div class="step_single">
-   										<div class="number">
-   											<span class="text">03</span>
-   											<span class="after"></span>
-   										</div>
-   										<div class="title_holder">
-   											<h3>Go and Have Fun</h3>
-   											<span>Go and have a good time or even make a booking directly from the listing page. Sed do eiusmod tempor </span>
-   										</div>
-   									</div>
-   								</div>
-   							</div>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    	<!-- /HOW IT WORK -->
-    	
-    	
+		</div>
+		
     	<!-- FROM OUR BLOG -->
     	<div class="directify_fn_exmblog_wrap">
     		<div class="directify_fn_exmblog">
@@ -849,7 +456,7 @@
     				<div class="container">
     					<div class="exmblogs">
     						<div class="title_holder">
-								<h3>From Our Blog</h3>
+								<h3>Happening Now</h3>
 								<span class="title">We post everyday about places that you want to know about.</span>
 								<span class="line"></span>
 							</div>
@@ -900,15 +507,21 @@
 								<div class="footer_location_row">
 									<div class="footer_logo">
 										<a href="index.html">
-											<img class="dark" src="{{asset('directify/img/logo-dark.png') }}" alt="" />
+											<img class="dark" src="{{asset('img/logo3.jpeg') }}" alt="" />
 										</a>
 									</div>
 								</div>
 								<div class="footer_location_row">
-									<span>San Francisco State University, 1600 Holloway Ave, San Francisco, CA 94132</span>
+									<span>Jl. BSD Green Office Park, GOP 9 - Ground Floor BSD City, Serpong, Tangerang, Indonesia 15345 </span>
 								</div>
 								<div class="footer_location_row">
-									<span>Directify Theme - Built by Flab Team &amp; Powered by Photoshop</span>
+									<span>Map : https://bit.ly/2HxTy13</span>
+								</div>
+								<div class="footer_location_row">
+									<span>Telp: 021 28675035, 0813 751 00376</span>
+								</div>
+								<div class="footer_location_row">
+									<span>Email: i.pinandito@gmail.com</span>
 								</div>
 							</div>
 						</div>
@@ -925,7 +538,7 @@
 								<li><a href="#"><i class="xcon-gplus"></i></a></li>
 							</ul>
 							<ul class="menu_list">
-								<li>Directify 2017 — Designed by <a href="#">Flab Team</a></li>
+								<li>eventbeta.com 2018<a href="#"></a></li>
 								<li><a href="#">Privacy Policy</a></li>
 								<li><a href="#">Terms</a></li>
 								<li><a href="#">Help</a></li>
