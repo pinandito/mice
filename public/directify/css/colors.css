@@ -56,7 +56,7 @@
 .back-bar .pointer,
 .directify_fn_contact_wrapper .directify_fn_contact_bg .overlay_color,
 .directify_fn_btn_contactsend_page,
-.directify_fn_submit_img_holder .overlay_color{background-color: #0089e2;}
+.directify_fn_submit_img_holder .overlay_color{background-color: #fff;}
 
 
 h1>a:hover,h2>a:hover,h3>a:hover,h4>a:hover,h5>a:hover,h6>a:hover,
@@ -96,7 +96,7 @@ h1>a:hover,h2>a:hover,h3>a:hover,h4>a:hover,h5>a:hover,h6>a:hover,
 .directify_fn_dashboard_wrapper .dashboard_content .dashboard_wrap .listings__active .active__single .content p a.name:hover,
 .directify_fn_dashboard_wrapper .dashboard_content .dashboard_wrap .review_wrap .review__single .content .name_holder .title a:hover,
 .directify_fn_dashboard_wrapper .dashboard_content .dashboard_wrap .bookmark_wrap .bookmark__single .content p a.name:hover,
-.directify_invoice__single_details .print a{color: #0089e2;}
+.directify_invoice__single_details .print a{color: #fff;}
 
 
 .directify_fn_exmblog_wrap .exmblogs .exmblog_single_wrap .exmblog_single .title_holder span.read_more a:hover,
@@ -106,7 +106,7 @@ h1>a:hover,h2>a:hover,h3>a:hover,h4>a:hover,h5>a:hover,h6>a:hover,
 .directify_fn_tags > em a:hover,
 .directify_fn_comment .comment_single .person_comment .inner > span a:hover,
 .directify_fn_submit_main_section .have-account p a:hover,
-.directify_fn_single_wrapper .single_title .title_info .title_holder span.categories a:hover{border-bottom-color: #0089e2;}
+.directify_fn_single_wrapper .single_title .title_info .title_holder span.categories a:hover{border-bottom-color: #fff;}
 
 
 .cat_single_wrap .cat_single:hover .overlay_color,
@@ -115,7 +115,7 @@ h1>a:hover,h2>a:hover,h3>a:hover,h4>a:hover,h5>a:hover,h6>a:hover,
 .directify_fn_pagination ul li a:hover,
 .directify_fn_pagination ul li.activated a,
 .directify_fn_submit_opening_section a span.trigger,
-.directify_invoice__single_details .print a{border-color: #0089e2;}
+.directify_invoice__single_details .print a{border-color: #fff;}
 /*------------------------------------------------------------------*/ 
 /*	02) PRIMARY TITLES' COLOR: #253147;
 /*------------------------------------------------------------------*/

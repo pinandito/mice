@@ -30,14 +30,10 @@
 <link rel="stylesheet" type="text/css" href="{{asset('directify/css/range.css') }}" />
 <link rel="stylesheet" type="text/css" href="{{asset('directify/css/style.css') }}" />
 <!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
-
 </head>
-
 <body>
-
 <!-- WRAPPER ALL -->
 <div class="directify_fn_wrapper_all">
-
 	<!-- SIGN IN POPUP -->
 	<div class="directify_fn_sign_in">
 		<div class="directify_fn_sign_in_content">
@@ -62,7 +58,6 @@
 		</div>
 	</div>
 	<!-- /SIGN IN POPUP -->
-   
     <!-- MOBILE MENU -->
    	<div class="directify_fn_mobile_menu_wrap absolute" data-bg-type="translight">
    	
@@ -91,32 +86,29 @@
    		<div class="directify_fn_mobile_nav">
    			<ul class="nav">
                 <li>
-					<a href="{{url('/') }}">Home<i class="xcon-angle-down"></i></a>
+					<a href="{{url('/') }}" style="color:#000">Home<i class="xcon-angle-down"></i></a>
 				</li>
                 <li>
-					<a href="{{url('/blog') }}">Blog<i class="xcon-angle-down"></i></a>
+					<a href="{{url('/blog') }}" style="color:#000">Blog<i class="xcon-angle-down"></i></a>
 				</li>
 				@if (Auth::guest())
 				<li class="log-in">
-					<a href="{{route('register')}}">Register</a>
-				</li>
-				<li class="log-in">
-					<a href="{{route('login')}}">Log In</a>
+					<a href="{{route('login')}}" style="color:#000">Register / Log In</a>
 				</li>
 				@else
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color:#000">
                         {{ Auth::user()->name }} <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu">
                         <li>
                             <a href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
-                                            document.getElementById('logout-form').submit();">
+                                            document.getElementById('logout-form').submit();" style="color:#000">
                                 Logout
                             </a>
 
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;" style="color:#000">
                                 {{ csrf_field() }}
                             </form>
                         </li>
@@ -145,25 +137,25 @@
                     <div class="directify_fn_header_nav_list">
 						<ul class="nav__hor">
                             <li>
-								<a href="{{url('/')}}">Home</a>
+								<a href="{{url('/')}}" style="color:#000">Home</a>
 							</li>
                             <li>
-								<a href="{{url('/blog')}}">Blog</a>
+								<a href="{{url('/blog')}}" style="color:#000">Blog</a>
 							</li>
 							@if (Auth::guest())
 							<li class="log-in">
-								<a href="{{route('login')}}">Register / Log In</a>
+								<a href="{{route('login')}}" style="color:#000">Register / Log In</a>
 							</li>
 							@else
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color:#000">
 									{{ Auth::user()->name }} <span class="caret"></span>
 								</a>
 								<ul class="dropdown-menu" role="menu">
 									<li>
 										<a href="{{ route('logout') }}"
 											onclick="event.preventDefault();
-														document.getElementById('logout-form').submit();">
+														document.getElementById('logout-form').submit();" style="color:#000">
 											Logout
 										</a>
 
@@ -175,7 +167,7 @@
 							</li>
 							@endif	
 							<li class="add_listing">
-								<a href="submit.html"><img class="svg" src="{{asset('directify/img/svg/pencil.svg') }}" alt="" /><span>Add Listings</span></a>
+								<a href="submit.html" style="color:#000"><img class="svg" src="{{asset('directify/img/svg/pencil.svg') }}" alt="" /><span>Add Listings</span></a>
 							</li>
 						</ul>
 					</div>
@@ -185,9 +177,6 @@
     </header>
     <!-- /HEADER -->
     @yield('contentcon')
-	<a class="totop" href="#"><i class="xcon-angle-up"></i></a>
-    <a class="listed" href="submit.html"><img class="svg" src="img/svg/pencil.svg" alt="" /></a>
-</div>
     <!-- FOOTER -->
     <footer class="directify_fn_footer_wrap">
 		<div class="directify_fn_footer">

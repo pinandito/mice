@@ -11,7 +11,13 @@
 |
 */
 
+Auth::routes();
+
 Route::get('/', 'HomeController@index');
+Route::get('/blog', 'HomeController@blog');
+Route::get('/post', 'HomeController@post');
+Route::get('/filter', 'SearchController@index');
+
 Route::get('/how', 'HomeController@how');
 
 Route::get('/cari', 'HomeController@cari');
@@ -33,5 +39,3 @@ Route::get('/delven/{id}', 'InsideController@delven');
 /*
 END ROUTE AFTER LOGIN
 */
-Auth::routes();
-

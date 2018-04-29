@@ -19,7 +19,7 @@ class SearchController extends Controller
         ->where('kota', 'like', '%'.$b.'%')
         ->get();
 
-        return View('cari', compact('vendor'));
+        return View('filter', compact('vendor'));
     }
 
 }

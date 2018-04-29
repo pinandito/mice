@@ -106,7 +106,7 @@ function directify_fn_leaflet(){
 									'<div class="featured_box_info">'+
 										'<div class="featured_box_like">'+
 											'<a href="#">'+
-												'<img class="svg" src="img/svg/bookmark.svg" alt="" />'+
+												'<img class="svg" src="{{asset('directify/img/svg/bookmark.svg') }}" alt="" />'+
 											'</a>'+
 											'<div class="featured_box_tooltip">'+
 												'<span>Bookmark</span>'+
@@ -117,23 +117,23 @@ function directify_fn_leaflet(){
 										'</div>'+
 										'<div class="directify_fn_rating" data-rating="'+Item.rating+'">'+
 											'<div class="behind">'+
-												'<img class="svg" src="img/svg/review.svg" alt="" />'+
+												'<img class="svg" src="{{asset('directify/img/svg/review.svg') }}" alt="" />'+
 											'</div>'+
 											'<div class="up">'+
-												'<img class="svg" src="img/svg/review.svg" alt="" />'+
+												'<img class="svg" src="{{asset('directify/img/svg/review.svg') }}" alt="" />'+
 											'</div>'+
 											'<div class="featured_box_preview">'+
 												'<a href="'+Item.link+'"><span>Preview</span></a>'+
 											'</div>'+
 										'</div>'+
 										'<div class="featured_box_address">'+
-											'<img class="svg" src="img/svg/placeholder.svg" alt="" />'+
+											'<img class="svg" src="{{asset('directify/img/svg/placeholder.svg') }}" alt="" />'+
 											'<span>'+Item.address+'</span>'+
 										'</div>'+
 										'<div class="featured_box_author_img">'+
 											'<div class="author_img">'+
 												'<img src="'+Item.author+'" alt="" />'+
-												'<img class="svg" src="img/svg/checked.svg" alt="" />'+
+												'<img class="svg" src="{{asset('directify/img/svg/checked.svg') }}" alt="" />'+
 											'</div>'+
 										'</div>'+
 									'</div>'+

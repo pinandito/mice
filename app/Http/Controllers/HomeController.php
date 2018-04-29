@@ -32,39 +32,18 @@ class HomeController extends Controller
         return view('index');
     }
     
-    public function profilev($id)
+    public function blog()
     {
-        return view('profilev');
+        return view('blog');
     }
 
-    public function how()
+    public function post()
     {
-        return view('how');
-    }
-
-    public function cari()
-    {
-        $vendor = Vendor::all();
-        return view('cari', compact('vendor'));
-    }
-
-    public function dashboard()
-    {
-        return view('dashboard');
+        return view('post');
     }
 
     public function home()
     {
-        return view('home');
-    }
-
-    public function summary()
-    {
-        return view('summary');
-    }
-
-    public function bride()
-    {
-        return view('bride');
+        return view('dashboard');
     }
 }

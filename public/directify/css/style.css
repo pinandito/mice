@@ -151,7 +151,6 @@ img.svg, .svg ,svg{
 /*------------------------------------------------------------------*/
 .directify_fn_mobile_menu_wrap{
 	display: none;
-	
 	width: 100%;
 	float: left;
 	clear: both;
@@ -4982,7 +4981,6 @@ span.browse_me{
 	float: left;
 	height: auto;
 	padding: 100px 0px;
-	background-color: #f6fafb;
 	clear: both;
 	
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -6435,7 +6433,6 @@ span.browse_me{
 .directify_fn_dashboard_wrapper .dashboard_content .menu_wrap .content ul.nav li a{
 	display: inline-block;
 	width: 100%;
-	
 	-webkit-transition: all .5s ease;
 	   -moz-transition: all .5s ease;
 	    -ms-transition: all .5s ease;
@@ -7528,7 +7525,6 @@ div.directify_invoice__single_details_closer{
 .directify_fn_sign_in{
 	opacity: 0;
 	visibility: hidden;
-	
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -8712,4 +8708,15 @@ input.directify_fn_search_input{width: 100%;}
 .directify_fn_submit_opening_section input:last-child{margin-bottom: 0px;}
 .directify_fn_dashboard_wrapper .dashboard_content .dashboard_wrap .invoice__single .col{width: 100%;}
 .directify_fn_carousel_famous_cities_wrap .carousel_city{width: 300px;}
+}
+/* TAMBAHAN */
+.directify_fn_all_listings_wrap .discovering .searching a.directify_fn_search_btn {
+	color: #000;
+}
+.directify_fn_footer_wrap .footer_nav_list_wrap {
+	background-color: #10e126;
+}
+
+.directify_fn_blog_wrap .blog_wrapper ul.mypost li .post .title_holder > span a {
+	color: #000;
 }
