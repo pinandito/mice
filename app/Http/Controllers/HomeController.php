@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Vendor;
-use App\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Collection;
-use Auth;
 use View;
+use Auth;
+use DB;
+use App\Vendor;
 
 class HomeController extends Controller
 {
@@ -15,13 +14,14 @@ class HomeController extends Controller
      * Create a new controller instance.
      *
      * @return void
-     */
-    /*
-     public function __construct()
+    
+    */
+
+    public function __construct()
     {
         $this->middleware('auth');
     }
-    */
+    
     /**
      * Show the application dashboard.
      *
@@ -31,19 +31,20 @@ class HomeController extends Controller
     {
         return view('index');
     }
-    
+
     public function blog()
     {
         return view('blog');
     }
 
-    public function post()
+    public function listing()
     {
-        return view('post');
+        $vendor = Vendor::with('user')->get();
+        return view('listing', compact('vendor'));
     }
 
     public function home()
     {
-        return view('dashboard');
+        return view('home');
     }
 }

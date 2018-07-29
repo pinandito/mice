@@ -1,4 +1,4 @@
-@extends('layout.appa')
+@extends('layout.app')
 
 @section('contentcon')
 <link href="{{asset('css/style.css')}}" rel="stylesheet" id="bootstrap-css">

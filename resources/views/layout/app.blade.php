@@ -30,118 +30,64 @@
 <link rel="stylesheet" type="text/css" href="{{asset('directify/css/range.css') }}" />
 <link rel="stylesheet" type="text/css" href="{{asset('directify/css/style.css') }}" />
 <!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
-
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
 <body>
 
 <!-- WRAPPER ALL -->
 <div class="directify_fn_wrapper_all">
-
-	<!-- SIGN IN POPUP -->
-	<div class="directify_fn_sign_in">
-		<div class="directify_fn_sign_in_content">
-			<div class="aaa">
-				<div class="sign_in_box effect-1">
-					<div class="sign_in_box_content">
-						<div class="closer">
-							<a href="#"><i class="xcon-cancel"></i></a>
-						</div>
-						<h3>Sign In</h3>
-						<input type="text" placeholder="Your Login" />
-						<input type="password" placeholder="Your Password" />
-						<input type="submit" value="Continue" />
-						<h5>Or</h5>
-						<a href="#" class="facebook">Continue with Facebook</a>
-						<a href="#" class="google">Sign In by Google</a>
-						<p>Nullam commodo arcu lorem, id posuere lorem viverra vel. Aenean mollis ante.</p>
-					</div>
+	<!-- MOBILE MENU -->
+	<div class="directify_fn_mobile_menu_wrap absolute" data-bg-type="translight">
+		<nav class="navbar navbar-inverse" style="background-color:#19cb33;">
+			<div class="container-fluid">
+				<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<div class="mobile_logo">
+					<a class="light" href="{{url('/')}}"><img src="{{asset('img/logo3.jpeg') }}" style="width:200px;" alt="" /></a>
 				</div>
-				<div class="directify_fn_sign_in_closer"></div>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="{{url('/')}}" style="color:#fff">Home</a></li>
+						<li><a href="{{url('/blog')}}" style="color:#fff">Blog</a></li>
+						<li><a href="{{url('/listing')}}" style="color:#fff">Listing</a></li>
+						<li><a href="{{url('/howtoven')}}" style="color:#fff">How to be a Vendor?</a></li>
+						@if (Auth::guest())
+						<li><a href="{{ route('login') }}" style="color:#fff">Register / Log In</a></li>
+						@else
+						<li>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="color:#000">
+								{{ Auth::user()->name }} <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown">
+									<a href="{{url('/logout')}}" style="color:#fff">
+										Logout
+									</a>
+								</li>
+							</ul>
+						</li>
+						@endif	
+					</ul>
+				</div>
 			</div>
-		</div>
+		</nav>
 	</div>
-	<!-- /SIGN IN POPUP -->
-   
-    <!-- MOBILE MENU -->
-   	<div class="directify_fn_mobile_menu_wrap absolute" data-bg-type="translight">
-   	
-   		<div class="directify_fn_mobile_menu">
-   			<div class="mobile_logo">
-				<a class="dark" href="index.html"><img src="{{asset('img/logo3.jpeg') }}" alt="" /></a>
-				<a class="light" href="index.html"><img src="{{asset('img/logo3.jpeg') }}" alt="" /></a>
-			</div>
-  			<div class="mobile_search">
-  				<a href="#">
-					<img class="svg" src="{{asset('directify/img/svg/search.svg') }}" alt="" />
-					Search
-				</a>
-  			</div>
-			<div class="hamburger hamburger--collapse-r">
-				<div class="hamburger-box">
-					<div class="hamburger-inner"></div>
-				</div>
-			</div>
-  			<div class="s-search">
-  				<a href="#">
-  					<img class="svg" src="{{asset('directify/img/svg/search.svg') }}" alt="" />
-  				</a>
-  			</div>
-   		</div>
-   		<div class="directify_fn_mobile_nav">
-   			<ul class="nav">
-                <li>
-					<a href="{{url('/') }}">Home<i class="xcon-angle-down"></i></a>
-				</li>
-                <li>
-					<a href="{{url('/blog') }}">Blog<i class="xcon-angle-down"></i></a>
-				</li>
-				@if (Auth::guest())
-				<li class="log-in">
-					<a href="{{route('register')}}">Register</a>
-				</li>
-				<li class="log-in">
-					<a href="{{route('login')}}">Log In</a>
-				</li>
-				@else
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                        {{ Auth::user()->name }} <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li>
-                            <a href="{{ route('logout') }}"
-                                onclick="event.preventDefault();
-                                            document.getElementById('logout-form').submit();">
-                                Logout
-                            </a>
-
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                {{ csrf_field() }}
-                            </form>
-                        </li>
-                    </ul>
-                </li>
-                @endif
-				<li class="add_listing">
-					<a href="submit.html"><span>Add Listings</span></a>
-				</li>
-			</ul>
-   		</div>
-   		@yield('contentmobile')	
-   	</div>
-	<!-- /MOBILE MENU -->
-   
-    <!-- HEADER -->
+	<!-- MOBILE -->
+	<!-- HEADER -->
     <header class="directify_fn_header_wrap absolute" data-bg-type="translight">
-    	<div>
 			<div class="directify_fn_header">
 				<div class="header">
 					<div class="directify_fn_header_logo">
-						<a class="dark" href="index.html"><img src="{{asset('img/logo3.jpeg') }}" alt="" /></a>
-						<a class="light" href="index.html"><img src="{{asset('img/logo3.jpeg') }}" alt="" /></a>
+						<a class="light" href="index.html"><img src="{{asset('img/logo3.jpeg') }}" alt="" style="width:135px;max-height:135px;" /></a>
 					</div>
-                    @yield('contentheader')	
                     <div class="directify_fn_header_nav_list">
 						<ul class="nav__hor">
                             <li>
@@ -150,43 +96,38 @@
                             <li>
 								<a href="{{url('/blog')}}">Blog</a>
 							</li>
+							<li>
+								<a href="{{url('/listing')}}">Listing</a>
+							</li>
+							<li>
+								<a href="{{url('/howtoven')}}">How to be a Vendor?</a>
+							</li>
 							@if (Auth::guest())
 							<li class="log-in">
-								<a href="{{route('login')}}">Register / Log In</a>
+								<a href="{{ route('login') }}">Register / Log In</a>
 							</li>
 							@else
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+							<li>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="color:#000">
 									{{ Auth::user()->name }} <span class="caret"></span>
 								</a>
-								<ul class="dropdown-menu" role="menu">
-									<li>
-										<a href="{{ route('logout') }}"
-											onclick="event.preventDefault();
-														document.getElementById('logout-form').submit();">
+								<ul class="dropdown-menu">
+									<li class="dropdown">
+										<a href="{{url('logout')}}" style="color:black">
 											Logout
 										</a>
-
-										<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-											{{ csrf_field() }}
-										</form>
 									</li>
 								</ul>
 							</li>
 							@endif	
-							<li class="add_listing">
-								<a href="submit.html"><img class="svg" src="{{asset('directify/img/svg/pencil.svg') }}" alt="" /><span>Add Listings</span></a>
-							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-		</div>
     </header>
     <!-- /HEADER -->
     @yield('contentcon')
 	<a class="totop" href="#"><i class="xcon-angle-up"></i></a>
-    <a class="listed" href="submit.html"><img class="svg" src="img/svg/pencil.svg" alt="" /></a>
 </div>
     <!-- FOOTER -->
     <footer class="directify_fn_footer_wrap">
@@ -213,7 +154,7 @@
 									<span>Telp: 021 28675035, 0813 751 00376</span>
 								</div>
 								<div class="footer_location_row">
-									<span>Email: i.pinandito@gmail.com</span>
+									<span>Email: cipta@eventbeta.com, ravindra@eventbeta.com, pinandito@eventbeta.com</span>
 								</div>
 							</div>
 						</div>
@@ -251,9 +192,6 @@
 <!-- /WRAPPER ALL -->
 
 <!-- SCRIPTS -->
-<script type="text/javascript" src="((asset('directify/js/jquery.js') }}"></script>
-<!--[if lt IE 11]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->	
-<script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
 <script type="text/javascript" src="{{asset('directify/js/plugins.js') }}"></script>
 <script type="text/javascript" src="{{asset('directify/js/carousel.js') }}"></script>
 <script type="text/javascript" src="{{asset('directify/js/leaflet.js') }}"></script>

@@ -2520,13 +2520,14 @@ span.browse_me{
 }
 .cat_single_wrap .cat_single_content a span.cat_title{
 	position: absolute;
-	bottom: 28px;
+	bottom: 90px;
 	font-size: 14px;
 	letter-spacing: .5px;
 	line-height: 1;
 	text-align: center;
 	width: 100%;
 	font-family: 'Poppins';
+	color:white;
 }
 .cat_single_wrap .cat_single_bg{
 	position: absolute;
